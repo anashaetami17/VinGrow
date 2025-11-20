@@ -44,10 +44,11 @@ body{
   position:sticky; /* biarkan sticky jika prefer modern; ganti ke 'static' jika ingin non-sticky */
   top:0;
   z-index:40;
+  padding : 12px 100px;
 }
 .nav a{margin-left:18px;text-decoration:none;color:#111;padding:6px 8px;border-radius:8px}
 .nav a.active{color:var(--primary);font-weight:600}
-.cta{background:var(--primary);color:#fff;padding:8px 14px;border-radius:12px;text-decoration:none}
+.cta{background:var(--primary);color:#fff;padding:6px 14px;border-radius:12px;text-decoration:none}
 
 /* HERO */
 .hero{
@@ -451,4 +452,96 @@ body{
   color: #444;
   line-height: 1.4;
 }
+/* --- Testimoni Video New Layout --- */
 
+.testimoni-video-wrapper {
+  margin-top: 40px;
+}
+
+.video-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: #f4f7ff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.video-box {
+  flex: 1;
+}
+
+.video-text {
+  flex: 1;
+}
+
+.video-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.video-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Stats bawah */
+.testi-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  gap: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  background: #f4f7ff;
+  text-align: center;
+  padding: 22px 10px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 26px;
+  color: #7418AD;
+  font-weight: 700;
+}
+
+.stat-box p {
+  margin: 6px 0 0;
+  color: #555;
+}
+
+/* Responsive */
+@media(max-width: 850px){
+  .video-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testi-stats {
+    flex-direction: column;
+  }
+}
+
+/* --- SOCIAL ICONS: ABOUT PAGE --- */
+.contact-info a {
+  display: inline-block;
+  margin-right: 28px;      /* jarak antar logo */
+}
+
+.contact-info img {
+  width: 40px;             /* kecilkan ikon */
+  height: 40px;
+  object-fit: contain;
+  transition: 0.2s ease;
+}
+
+.contact-info img:hover {
+  transform: scale(1.08);
+}
