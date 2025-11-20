@@ -338,6 +338,53 @@ body{
   font-weight: 600;
 }
 
+/* --- MOBILE NAVBAR (Hamburger) --- */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media(max-width: 780px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-wrapper {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-wrapper.open {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+    background: white;
+  }
+
+  .nav a {
+    margin-left: 0 !important;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav a.cta {
+    border-bottom: none;
+    align-self: flex-start;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+  }
+}
+
 /* Responsive */
 @media(max-width: 780px){
   .kategori-grid {

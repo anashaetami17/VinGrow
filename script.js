@@ -14,5 +14,8 @@ document.getElementById("videoThumb").onclick = function() {
   document.getElementById("youtubePlayer").src =
     "https://www.youtube.com/embed/JAdTjHsOid0?autoplay=1";
 };
+function toggleMenu() {
+  document.querySelector(".nav-wrapper").classList.toggle("open");
+}
 
 
